@@ -2,4 +2,4 @@
 git config --global credential.helper store
 git config --global credential.helpter cache
 
-git checkout -b auto-commit
+git checkout -b auto-commit > /dev/null
