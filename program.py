@@ -21,20 +21,20 @@ while choice != 5:
         subprocess.call(['sh', './autoCommitProcess.sh'])
     
     elif choice == 3:
-        subprocess.call(['bash', './testKillProcess.sh'])
+        subprocess.call(['bash', './killProcess.sh'])
 
         filename = str(input("What file to add?(file_name) "))
         subprocess.call(['sh', './addFile.sh', filename])
 
     elif choice == 4:
-        subprocess.call(['bash', './testKillProcess.sh'])
+        subprocess.call(['bash', './killProcess.sh'])
         branch = str(input("Where to push?(branch_name) "))
         msg = str(input("Write commit message: "))
         
         subprocess.call(['sh', './userCommit.sh', branch, msg])
 
     elif choice == 5:
-        subprocess.call(['bash', './testKillProcess.sh'])
+        subprocess.call(['bash', './killProcess.sh'])
 
     else:
         print("Wrong Input! Please input again")
