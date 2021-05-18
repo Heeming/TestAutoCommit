@@ -5,10 +5,10 @@ do
 
   if ! git diff --quiet
   then
-    git checkout auto-commit > /dev/null
-    git add . > /dev/null
-    git commit -m "Auto Commit" > /dev/null
-    git push -u origin auto-commit > /dev/null
+    git --paginate checkout auto-commit
+    git --paginate add .
+    git --paginate commit -m "Auto Commit"
+    git --paginate push -u origin auto-commit
 
   #else
     #echo "Working tree clean. Nothing to commmit."
