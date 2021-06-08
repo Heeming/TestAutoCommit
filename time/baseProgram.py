@@ -6,7 +6,7 @@ import os
 
 def auto_commit():
     subprocess.call(['sh', './continue.sh'])
-    subprocess.call(['sh', './autoCommitProcess.sh'])
+    subprocess.call(['sh', './autoCommitOnce.sh'])
     print("백업되었습니다.")
 
 def time_based_autocommit(n):
@@ -83,6 +83,7 @@ while choice != 8:
                 branch = str(num)
                 msg = str(num)
                 time_based_autocommit(num) # GUI에서 사용자가 분을 세팅했다고 가정
+
             except KeyboardInterrupt:  # GUI에서 체크버튼 해제되었다고 가정
                 break
 
@@ -145,3 +146,5 @@ while choice != 8:
         subprocess.call(['bash', './killProcess.sh'])
     else:
         print("Wrong Input! Please input again")
+
+# First Change
