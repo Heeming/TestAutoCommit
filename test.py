@@ -1,16 +1,7 @@
-# test
-# 1
-# 1.1
-# 1.2
-# 1.3
-# 1.4
-# 1.5
-# 1.6
-# 1.7
-# 1.8
-# 2
-# 2.1
-# 2.2
-# 2.3
-# 2.4
-# 2.5
+# now more than 20% is changed
+
+# now testing file auto-commit mode2
+# it commits changes when changes occur in the specific file
+# specific file = test.py
+
+# now commits
